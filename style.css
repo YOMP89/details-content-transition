@@ -1,0 +1,63 @@
+/* Reset and basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+details {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+summary {
+  cursor: pointer;
+  padding: 15px;
+  background: #0078d7;
+  color: white;
+  font-weight: bold;
+  user-select: none;
+  outline: none;
+}
+
+summary:hover {
+  background: #005fa3;
+}
+
+details::details-content {
+  display: block;
+  overflow: hidden;
+  transition: width 0.5s ease, content-visibility 0.5s ease allow-discrete;
+  content-visibility: hidden;
+  width: 0;
+  background: #f9f9f9;
+  padding: 0 15px;
+  border-top: 1px solid #ddd;
+}
+
+details[open]::details-content {
+  width: 300px;
+  content-visibility: visible;
+}
+
+p {
+  margin: 10px 0;
+}
