@@ -1,4 +1,5 @@
 # Details Content Transition Project
+![Pantallazo del proyecto](pantallazo.jpg)
 
 ## Descripción
 Este proyecto utiliza el pseudoelemento `::details-content` para crear transiciones fluidas cuando el contenido de un elemento `<details>` se expande o colapsa. 
